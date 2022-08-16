@@ -1,0 +1,335 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    padding: 2em;
+}
+nav {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 1.5em 0;
+}
+.nav__img {
+    width: 55%;
+}
+
+.nav__bar a{
+    text-decoration: none;
+    float: right;
+    margin-left: 0.8em;
+    font-size: 2rem;
+    color: black;
+}
+section {
+    display: grid;
+    row-gap: 2em;
+}
+.header-section-container {
+    text-align: center;
+}
+.header-section-container h1 {
+    font-size: 4em;
+}
+.header-section-container p {
+    font-size: 2.5em;
+}
+.header-section-buttons {
+    overflow:inherit;
+    width: 100%;
+    margin-top:2em;
+    display: grid;
+    row-gap: 2em;
+}
+.header-section-buttons__text{
+    width: 100%;
+    height: 80px;
+    padding: 1em 0;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.6em;
+}
+.header-section-buttons__button{
+    width: 100%;
+    height: 80px;
+    padding: 1em 0;
+    margin: 0 auto;
+    background: blue;
+    color: white;
+    font-size: 1.6em;
+}
+.header-section__img {
+    width: 100%;
+}
+section {
+    text-align: center;
+}
+.section1 {
+    padding: 2em;
+}
+.main-section1-container {
+   display: grid;
+   row-gap: 2.5em;
+}
+.main-section1-container a{
+   font-size: 1.8rem;
+   color: rgba(8, 90, 8, 0.534);
+}
+.main-section1-container h1 {
+    font-size: 1.9rem;
+}
+.main-section1-container p {
+    font-size: 1.9rem;
+}
+.main-section1-container a {
+    text-align: center;
+}
+.arrow {
+    width: .8em;
+}
+.fa-quote-left {
+    display: flex;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+.main-section1-box {
+    text-align: start;
+    margin: 0 5em;
+    padding: 2em;
+    box-shadow: 0 0 10px 0.1px rgb(211, 199, 199);
+}
+
+.main-section1-box p{
+    font-size: 1.4rem;
+}
+
+.main-section1-image img {
+    max-width: 100%;    
+}
+.main-section1-profile__img {
+   width: 2.5em;
+   border-radius: 50%;
+}
+.main-section1-profile {
+    display: flex;
+    margin: 2em 0 0;
+    column-gap: 1em
+}
+.main-section1-profile-flex p {
+   font-size: 1em;
+}
+
+.section2 {
+    color: white;
+    background: hsl(238, 22%, 44%);
+    padding: 2em;
+}
+.main-section2-buttons {
+    margin: 0 4em;
+}
+.main-section2-container h1 {
+    font-size: 2rem;
+    margin-bottom: .6em;
+
+}
+.main-section2-container p {
+    font-size: 1.2rem;
+}
+.main-section2-buttons input {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0;
+}
+.main-section2-buttons button{
+    background: hsl(224, 93%, 58%);
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 1em;
+}
+
+footer {
+    background: hsl(243, 87%, 12%);
+    font-size: 2rem;
+    padding: 2em;
+    display: grid;
+    row-gap: 2em;
+}
+.footer-contacts {
+    display: grid;
+    row-gap: 1em;
+}
+.footer-contacts a {
+    text-decoration: none;
+    color: white;
+}
+.footer-details1 {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.footer-details1 a {
+    text-decoration: none;
+    color:white;
+
+}
+.footer-details2 {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.footer-details2 a {
+    text-decoration: none;
+    color:white;
+
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+}
+.fa-facebook-f {
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px 15px;
+}
+.fa-twitter {
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+.fa-instagram {
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+
+/* for desktop screen -media query- */
+
+@media screen and (min-width: 760px) {
+   .nav__bar a{
+       font-size: 1.2em;
+       margin-left: 2em;
+   }
+    .nav__img {
+        width: 30%;
+    }  
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+    }
+
+    .header-section-container {
+        display: grid;
+        align-items: center;
+        padding: 5em 0;
+    }
+    .header-section-container h1 {
+        margin-bottom: 0.4em;
+        font-size: 2.5em;
+        text-align: start;
+    }
+    .header-section-container p {
+        font-size: 1.5em;
+        text-align: start;
+    }
+
+    .header-section-buttons {
+        display: grid;
+        grid-template-columns: 60% 37%;
+        column-gap: 3%;
+    }
+    .header-section-buttons__text {
+        height: 45px;
+        font-size: 1rem;
+    }
+   .header-section-buttons__button {
+       height: 45px;
+       font-size: 1rem;
+   }
+   .section1 {
+    background: rgb(246, 243, 243);
+
+ }
+   .section1 {
+       background-image: url(./images/bg-curve-desktop.svg);
+       background-repeat: no-repeat;
+    
+    }
+
+   .main-section1-container {
+       text-align: left;
+   }
+   
+   .main-section1-container h1 {
+       font-size: 2.6rem;
+   }
+   .main-section1-container p {
+       font-size: 1.3rem;
+   }
+   .main-section1-container a {
+       font-size: 1.3rem;
+       text-align: left;
+   }
+   .main-section1-box {
+       margin-left: 0;
+   }
+
+
+
+   .main-section1-image {
+       width: 100%;
+       display: block;
+       margin-top: 25%;
+   }
+   .main-section2-buttons button {
+       width: 40%;
+   }
+   .main-section2-container h1, p {
+       text-align: left;
+   }
+   .main-section2-container h1 {
+       margin-bottom: 1em;
+   }
+    footer {
+       font-size: 1em;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       column-gap: 2em; 
+       color: white;
+   }  
+   .footer-email {
+       display: flex; 
+       column-gap: 1em;
+   }
+   .footer-mail img {
+       padding-right: 1em;
+   }
+   .footer-number a{
+       margin-left: 1em;
+   }
+   .footer-details1 {
+       margin-top: 2em;
+   }
+   .footer-details2 {
+       margin-top: 2em;
+   }
+   .footer-links {
+       position: relative;
+       right: 8em;
+      margin-top: 2em;
+   }
+
+
+}
+
+
